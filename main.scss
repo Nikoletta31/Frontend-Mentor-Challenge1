@@ -1,0 +1,146 @@
+@mixin text-color {
+    color: hsl(300, 43%, 22%);
+    font-family:'Spartan';
+    font-weight:500;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+@mixin score-cell {
+    background-color: hsl(300, 24%, 96%);
+    border-radius:10px;
+    padding:15px;
+}
+
+@mixin client-cell {
+    background-color:hsl(300, 43%, 22%);
+    border-radius:10px; 
+    color:white;
+    margin-bottom:10px;
+}
+
+
+* {
+    padding:0;
+    margin:0;
+}
+
+.container {
+display:grid; 
+grid-template-columns: 1fr; 
+grid-template-rows: 2fr 1fr 1fr 1fr; 
+margin:20px;
+padding:20px 10px 20px 10px;
+grid-gap:5px;
+align-items: center;
+text-align:center;
+.text {
+   h1{color: hsl(300, 43%, 22%);
+    font-family:'Spartan';
+    font-weight:700;
+} 
+p {
+    color: hsl(303, 10%, 53%);
+    font-family:'Spartan'; 
+    font-weight:500;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+}
+.score1 {
+@include score-cell;
+    p{
+@include text-color;
+    }
+}
+.score2 {
+@include score-cell;
+    p{
+ @include text-color;
+    }
+}
+.score3 {
+@include score-cell;
+    p{
+ @include text-color;
+    }
+}
+}
+
+
+
+.flex {
+    display: flex; 
+    flex-direction: column;
+    margin:30px 10px 30px 10px;
+    padding:20px;
+    font-family:'Spartan';
+    font-size:15px;
+    .client1 {
+     @include client-cell;
+        img {
+            float:left;
+            border-radius:50%;
+            padding:30px;
+            max-width:15%;
+            height:auto;
+        }
+        .name{
+            padding-top:30px;
+            font-weight:500;
+            span{
+                color:hsl(333, 80%, 67%);
+            }
+        }
+   p {
+       padding:30px 30px 30px 30px;
+       line-height:1.5;
+       
+   }
+    }
+
+    .client2 {
+        @include client-cell;
+           img {
+               float:left;
+               border-radius:50%;
+               padding:30px;
+               max-width:15%;
+               height:auto;
+           }
+           .name2{
+               padding-top:30px;
+               font-weight:500;
+               span{
+                   color:hsl(333, 80%, 67%);
+               }
+           }
+      p {
+          padding:30px 30px 30px 30px;
+          line-height:1.5;
+          
+      }
+       }
+       .client3 {
+        @include client-cell;
+           img {
+               float:left;
+               border-radius:50%;
+               padding:30px;
+               max-width:15%;
+               height:auto;
+           }
+           .name3{
+               padding-top:30px;
+               font-weight:500;
+               span{
+                   color:hsl(333, 80%, 67%);
+               }
+           }
+      p {
+          padding:30px 30px 30px 30px;
+          line-height:1.5;
+          
+      }
+       }
+}

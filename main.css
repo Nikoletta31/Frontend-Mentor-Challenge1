@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  margin: 20px;
+  padding: 20px 10px 20px 10px;
+  grid-gap: 5px;
+  align-items: center;
+  text-align: center; }
+  .container .text h1 {
+    color: #502050;
+    font-family: 'Spartan';
+    font-weight: 700; }
+  .container .text p {
+    color: #937b92;
+    font-family: 'Spartan';
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .container .score1 {
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    padding: 15px; }
+    .container .score1 p {
+      color: #502050;
+      font-family: 'Spartan';
+      font-weight: 500;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .container .score2 {
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    padding: 15px; }
+    .container .score2 p {
+      color: #502050;
+      font-family: 'Spartan';
+      font-weight: 500;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .container .score3 {
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    padding: 15px; }
+    .container .score3 p {
+      color: #502050;
+      font-family: 'Spartan';
+      font-weight: 500;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px 30px 10px;
+  padding: 20px;
+  font-family: 'Spartan';
+  font-size: 15px; }
+  .flex .client1 {
+    background-color: #502050;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px; }
+    .flex .client1 img {
+      float: left;
+      border-radius: 50%;
+      padding: 30px;
+      max-width: 15%;
+      height: auto; }
+    .flex .client1 .name {
+      padding-top: 30px;
+      font-weight: 500; }
+      .flex .client1 .name span {
+        color: #ee68a4; }
+    .flex .client1 p {
+      padding: 30px 30px 30px 30px;
+      line-height: 1.5; }
+  .flex .client2 {
+    background-color: #502050;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px; }
+    .flex .client2 img {
+      float: left;
+      border-radius: 50%;
+      padding: 30px;
+      max-width: 15%;
+      height: auto; }
+    .flex .client2 .name2 {
+      padding-top: 30px;
+      font-weight: 500; }
+      .flex .client2 .name2 span {
+        color: #ee68a4; }
+    .flex .client2 p {
+      padding: 30px 30px 30px 30px;
+      line-height: 1.5; }
+  .flex .client3 {
+    background-color: #502050;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px; }
+    .flex .client3 img {
+      float: left;
+      border-radius: 50%;
+      padding: 30px;
+      max-width: 15%;
+      height: auto; }
+    .flex .client3 .name3 {
+      padding-top: 30px;
+      font-weight: 500; }
+      .flex .client3 .name3 span {
+        color: #ee68a4; }
+    .flex .client3 p {
+      padding: 30px 30px 30px 30px;
+      line-height: 1.5; }
+
+/*# sourceMappingURL=main.css.map */
